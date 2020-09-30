@@ -1,9 +1,12 @@
 h1{
     color:#025157;
+    text-align: center;
 }
 
 h2{
     color:#8b8b8bcc;
+    font-size: 15px;
+    text-align: center;
 }
 
 button{
@@ -13,4 +16,5 @@ button{
 
 body{
     background-color: #fffbf7;
+    font-family: Helvetica;
 }
