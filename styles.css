@@ -1,22 +1,50 @@
-h1{
+body {
+    background-color: #fffbf7;
+    text-align: center;
+}
+
+h1 {
     color:#025157;
-    text-align: center;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Alegreya', serif;
+    font-size: 60px;
 }
 
-h2{
-    color:#8b8b8bcc;
+h2 {
+    color: #46484c;
     font-size: 15px;
-    text-align: center;
-    font-family: 'Sansita Swashed', cursive;
+    font-family: 'Slabo 27px', serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
-button{
+input {
+    width: 200px;
+    height: 25px;
+    border-radius: 10px;
+    border-width: 1px;
+    padding: 10px;
+    font-family: Helvetica;
+    font-size: 18px;
+    color: rgba(128, 128, 128, 0.685);
+}
+
+button {
+    width: 170px;
+    height: 45px;
     color:#fff;
     background-color: #025157;
+    font-family: Helvetica;
+    font-size: 18px;
+    margin: -12px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border: none;
 }
 
-body{
-    background-color: #fffbf7;
-    font-family: Helvetica;
+p {
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    color: #8b8b8bcc;
 }
