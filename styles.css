@@ -2,6 +2,14 @@ body {
     background-color: #fffbf7;
 }
 
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fffbf7;
+}
+
 .encabezado {
     margin-top: 5px;
     margin-left: 20px;
@@ -54,8 +62,8 @@ body {
 
 .actions a {
     color: #67b54b;
-    text-decoration:none;
-    margin-left: -30px;
+    text-decoration: none; /* Se quita el subrayado que trae por default <a> */
+    margin-left: -40px;
     margin-right: 50px;
 }
 
@@ -67,18 +75,18 @@ body {
     border-radius: 5px;
 }
 
-.seccion1 {
+.main_section {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 285px;
 }
 
-h1 {
+.main_section h1 {
     color:#025157;
     font-family: 'Alegreya', serif;
     font-size: 60px;
 }
 
-h2 {
+.main_section h2 {
     color: #46484c;
     font-size: 15px;
     font-family: 'Slabo 27px', serif;
@@ -88,7 +96,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-input {
+.enter_email {
     width: 200px;
     height: 25px;
     border-radius: 10px;
@@ -99,7 +107,7 @@ input {
     color: rgba(128, 128, 128, 0.685);
 }
 
-button {
+.submit_email {
     width: 170px;
     height: 45px;
     color:#fff;
@@ -112,7 +120,7 @@ button {
     border: none;
 }
 
-p {
+.start_publishing {
     margin-top: 20px;
     font-family: "Open Sans", sans-serif;
     color: #8b8b8bcc;
@@ -125,4 +133,37 @@ p {
     display: block;
     width: 60%;
     height: 60%;
+}
+
+.promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.video img {
+    width: 30%;
+    margin: auto;
+}
+
+.texto_publicitario {
+    flex: 1;
+}
+
+.subtitle {
+    color:#025157;
+    font-family: 'Alegreya', serif;
+    font-size: 40px;
+}
+
+.content {
+    color:#025157;
+    font-family: 'Slabo 27px', serif;
 }

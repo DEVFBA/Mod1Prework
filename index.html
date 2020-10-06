@@ -8,39 +8,61 @@
     <title>Matcha Prework</title>
 </head>
 <body>
-<header class="encabezado">
-    <!-- Logo con link a la página principal -->
-    <a class="logo">
-        <img src="images/footer_logo.svg"/>
-    </a>
-    <!-- Menú de navegación -->
-    <nav class="navegacion">
-        <ul>
-            <li>Platform</li>
-            <li>Pricing</li>
-            <li>Customers</li>
-            <li>Resources</li>
-            <li>About</li>
-        </ul>
-    </nav>
-    <!-- Contenedor de acciones de usuario -->
-    <div class= "actions">
-        <a href="/login">Sign In</a>
-        <button>Start free trial</button>
-    </div>
-    </header>
-    <section class="seccion1">
+    <section class="fixed-header">
+        <header class="encabezado">
+            <!-- Logo con link a la página principal -->
+            <a class="logo">
+                <img src="images/footer_logo.svg"/>
+            </a>
+            <!-- Menú de navegación -->
+            <nav class="navegacion">
+                <ul>
+                    <li>Platform</li>
+                    <li>Pricing</li>
+                    <li>Customers</li>
+                    <li>Resources</li>
+                    <li>About</li>
+                 </ul>
+            </nav>
+            <!-- Contenedor de acciones de usuario -->
+            <div class= "actions">
+                <a href="/login">Sign In</a>
+                <button>Start free trial</button>
+            </div>
+        </header>
+    </section>
+    <section class="main_section">
         <h1><strong>Build your blog. Build your business.</strong></h1>
         <h2>Instantly publish articles, drive more traffic, grow your email list, and see your blog's impact on sales.</h2>
         <form>
-            <input type="email" value="Enter email address"/>
-            <button type="submit">Try it now &rarr;</button>
+            <input class="enter_email" type="email" value="Enter email address"/>
+            <button class="submit_email" type="submit">Try it now &rarr;</button>
         </form>
-        <p>Start publishing today with a <strong>free 7-day trial.</strong></p>
-        <p><strong>No credit card</strong> required.</p>
+        <p class="start_publishing">Start publishing today with a <strong>free 7-day trial.</strong></p>
+        <p class="start_publishing"><strong>No credit card</strong> required.</p>
         <img id="img1" src="images/capterra.png"/>
         <img id="img2" src="images/intro_group_image.png" />
     </section>
-
+      <!-- Contenedor de video -->
+    <section class="promo">
+        <article class="video">
+            <video controls poster="images/computer_code00_small.jpg">
+                <source type="video/webm" src="videos/computer_code00_preview.webm" />
+                <source type="video/mp4" src="videos/computer_code00_preview.mp4" />
+            </video>
+            <img src="images/see_how_it_works.png" alt="See how it woriks!">
+        </article>
+        <article class="texto_publicitario">
+            <h3 class="subtitle">Publish to your blog in minutes, not hours.</h3>
+            <p class="content">Your blog is your most powerful asset to build, engage, and retain a loyal audience. But you don't have hours to create
+                content that may o may not work. With Matcha, instantly publish from our library of 10,0000+ professionally written
+                articles and build your email list faster with our powerful conversion tool.</p>
+            <form>
+                <p class="start_publishing">Start publishing today:</p>
+                <input class="enter_email" type="text" placeholder="Enter email"/><!--¿Diferencia entre type email y text, por qué arriba usamos email y aquí txt?-->
+                <button class="submit_email" type="submit">Start my trial</button>
+            </form>
+        </article>
+    </section>
 </body>
 </html>
