@@ -1,13 +1,9 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: #fffbf7;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", serif;
 }
 
-.fixed-header {
+.fixed_header {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,7 +18,7 @@ body {
     font-size: 0;
 }
 
-.encabezado > * {
+.encabezado * {
     display: inline-block;
     font-size: 16px;
     vertical-align: middle;
@@ -50,7 +46,6 @@ body {
     color: #025157;
     font-family: 'Slabo 27px', serif;
     font-size: 20px;
-    display: inline-block;
 }
 
 .actions {
@@ -61,40 +56,43 @@ body {
     font-size: 14px;
 }
 
-.actions > * {
+.actions * {
     margin-left: 10px;
     font-family: 'Slabo 27px', serif;
-    font-size: 16px;
 }
 
 .actions a {
     color: #67b54b;
     text-decoration: none; /* Se quita el subrayado que trae por default <a> */
-    margin-left: -40px;
+    margin-left: -50px;
     margin-right: 50px;
 }
 
 .actions button {
     color: white;
     background-color: #67b54b;
-    width: 120px;
-    height: 60px;
+    height: 100%;
     border-radius: 5px;
-    border: none;
+    border: 0;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: "Open Sans", serif;
 }
 
-.main_section {
+.seccion1 {
     text-align: center;
     margin-top: 285px;
 }
 
-.main_section h1 {
+h1 {
     color:#025157;
     font-family: 'Alegreya', serif;
     font-size: 60px;
 }
 
-.main_section h2 {
+h2 {
     color: #46484c;
     font-size: 15px;
     font-family: 'Slabo 27px', serif;
@@ -104,19 +102,18 @@ body {
     margin-bottom: 30px;
 }
 
-.enter_email {
+.enter-email {
     width: 200px;
-    height: 45px;
+    height: 48px;
     border-radius: 10px;
     border-width: 1px;
     padding: 10px;
     font-family: Helvetica;
     font-size: 18px;
     color: rgba(128, 128, 128, 0.685);
-    border-color: rgb(192, 191, 191);
 }
 
-.submit_email {
+.submit-email {
     width: 170px;
     height: 45px;
     color:#fff;
@@ -129,7 +126,7 @@ body {
     border: none;
 }
 
-.start_publishing {
+p {
     margin-top: 20px;
     font-family: "Open Sans", sans-serif;
     color: #8b8b8bcc;
@@ -146,116 +143,187 @@ body {
 
 .promo {
     display: flex;
+    flex-direction: row;
     width: 70%;
     margin: 100px auto;
     align-items: center;
 }
 
-.video {
+.explanatory_video {
     display: flex;
     flex-direction: column;
-    flex: 1;
-    margin-right: 20px;
-}
-
-.video video {
-    width: 100%;
-    padding: 0;
-}
-
-.video img {
-    width: 30%;
-    margin: auto;
-}
-
-.texto_publicitario {
+    align-items: center;
     flex: 1;
 }
 
-.texto_publicitario h3 {
-    margin-top: 0;
+.explanatory_video img {
+    width: 100px;
+    margin-top: 10px;
 }
 
-.subtitle {
-    color:#025157;
+.publish {
+    flex: 1;
+}
+
+.publish h3 {
     font-family: 'Alegreya', serif;
     font-size: 40px;
+    line-height: 48px;
+    color: #025157;
 }
 
-.content {
-    color:#025157;
-    font-family: 'Slabo 27px', serif;
+.publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.publish > form {
+    display: flex;
+}
+
+.publish > form p {
+    color: #025157;
+    margin-right: 18px;
 }
 
 .features {
-    display: grid;
-    grid-template: repeat(2, 330px) / repeat(2, 1fr);
     background-color: #025157;
     padding: 5% 10%;
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
 }
 
-.feature-cards {
-    border-radius: 5px;
+.features .feature-card {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
     background-color: #fff;
     border: 1px solid #dadada;
+    border-radius: 5px;
     display: flex;
-    flex-direction: row;
     align-items: center;
     overflow: hidden;
 }
 
-.feature-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.features .feature-card .feature-content {
     padding: 30px 20px 40px 40px;
     flex: 2;
-    line-height: 1.5;
-    text-align: left;
 }
 
-.feature-description img {
-    width: 50%;
-    flex: 1;
-    vertical-align: middle;
+.features .feature-card .feature-content > * {
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
-.feature-description h4 {
+.features .feature-card .feature-content img {
+    width: 50px;
+}
+
+.features .feature-card .feature-content figure {
+    margin-left: 0;
+}
+
+.features .feature-card .feature-content h3 {
     font-size: 24px;
     color: #343434;
     font-weight: 400;
-    flex: 1;
 }
 
-.feature-description p {
+.features .feature-card .feature-content p {
     font-size: 16px;
     color: #7e7e7e;
     font-weight: 400;
-    flex: 1;
 }
 
-.feature-description a {
+.features .feature-card .feature-content a {
     font-size: 16px;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
 }
 
-.feature-image {
+.features .feature-card .feature-image {
     flex: 1;
     width: 40%;
     position: relative;
     right: -50px;
     height: 80%;
-    display: block;
+    transition: right 1s;
 }
 
-.feature-image img {
-    height: 100%;
-    vertical-align: middle;
-    border-style: none;
+.features .feature-card .feature-image:hover {
+    right: 0px;
+}
+
+.features .feature-card .feature-image figure,
+  .features .feature-card .feature-image img {
     margin-top: 0;
+    height: 100%;
+}
+
+@media (max-width: 425px) {
+    .navegacion, .actions {
+        display: none;
+    }
+
+    .seccion1 {
+        margin-top: 100px;
+    }
+
+    .seccion1 h1 {
+        font-size: 30px;
+    }
+
+    .seccion1 #img1 {
+        width: 100%;
+    }
+
+    .seccion1 #img2 {
+        width: 100%;
+    }
+
+    .promo {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .promo .explanatory_video {
+        width: 90%;
+    }
+
+    .promo .publish {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .promo .publish h3 {
+        line-height: 1.2;
+        font-size: 24px;
+    }
+
+    .email-form {
+        width: 100%;
+    }
+
+    .enter-email {
+        width: 140px;
+        font-size: 12px;
+    }
+
+    .submit-email {
+        width: 140px;
+    }
+
+    .features {
+        grid-template: repeat(4, 330px) / 1fr;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .features .feature-card .feature-image {
+        display: none;
+    }
 }
